@@ -21,7 +21,7 @@ class PID
     void GetConstants(float& Kp,float& Ki, float& Kd);
     float Calculate(float setPoint, float measurement);
     private:    
-    float Kp, Ki, Kd, Max, Min, sampleTimeMs, lastMeasurement, lastTime, lastOutput, lastError;
+    float Kp, Ki, Kd, Max, Min, sampleTimeMs, lastMeasurement, lastTime, lastOutput, lastError, lastD;
     float Integral;
 };
 #endif

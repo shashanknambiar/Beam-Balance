@@ -29,7 +29,7 @@ float PID::Calculate(float setPoint, float measurement)
       lastMeasurement = measurement;
       return 0.0f;
     }
-    if (dtMs < sampleTimeMs) return lastOutput;
+    //if (dtMs < sampleTimeMs) return lastOutput;
 
     float dt = dtMs / 1000.0f;
     float error = setPoint - measurement;
